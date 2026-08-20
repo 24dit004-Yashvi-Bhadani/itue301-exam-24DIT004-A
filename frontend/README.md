@@ -1,16 +1,83 @@
-# React + Vite
+# Library Book Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Project Name
 
-Currently, two official plugins are available:
+Library Book Management System
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project implements selected parts of a library management system using React, Express, and MongoDB with Mongoose.
 
-## React Compiler
+## 2. Frontend Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Navigate to the frontend directory:
 
-## Expanding the ESLint configuration
+```bash
+cd frontend
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the React application:
+
+```bash
+npm run dev
+```
+
+Frontend runs on:
+
+```text
+http://localhost:5173
+```
+
+## 3. Backend Setup
+
+Navigate to the backend directory:
+
+```bash
+cd backend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the backend:
+
+```bash
+npm run dev
+```
+
+Backend runs on:
+
+```text
+http://localhost:5000
+```
+
+## 4. MongoDB Setup
+
+Create a MongoDB database using MongoDB Atlas or a local MongoDB installation.
+
+Create a `.env` file inside the `backend` directory.
+
+Add the MongoDB connection string:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+```
+
+The application connects to MongoDB using Mongoose.
+
+## 5. Required Environment Variable
+
+The required environment variable is:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+```
+
+The `.env` file should not be committed to GitHub.
